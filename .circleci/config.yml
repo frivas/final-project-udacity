@@ -17,7 +17,6 @@ jobs:
                   command: npm run build
             - aws-cli/install
             - aws-s3/copy:
-                  name: Deploying Frontend
                   from: ./www
                   to: $S3_BUCKET_FRONTEND
                   arguments: --recursive --acl public-read
@@ -37,7 +36,6 @@ jobs:
                       npm run create_archive
             - aws-cli/install
             - aws-s3/copy:
-                  name: Deploying Server (S3)
                   from: ./www/Project.zip
                   to: $S3_BUCKET_SERVER
             - run:
