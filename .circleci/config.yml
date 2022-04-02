@@ -31,7 +31,7 @@ jobs:
                   command: |-
                       npm run build
                       printenv > www/.env
-                      npm run archive
+                      npm run create_archive
             - aws-cli/install
             - run:
                   name: Deploy Server
