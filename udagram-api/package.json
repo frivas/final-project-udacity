@@ -12,9 +12,6 @@
     "clean": "rm -rf www/ || true",
     "build": "npm run clean && tsc && cp -rf src/migrations www/migrations && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Project.zip . && cd ..",
     "test": "jasmine",
-    "clean-windows": "rimraf www/ || true",
-    "build-windows": "npm run clean-windows && tsc && npm run copy-windows",
-    "copy-windows": "copy .npmrc \"www/.npmrc\" && copy package.json \"www/package.json\" && xcopy /E /I \"src/migrations\" \"www/migrations\"",
     "deploy": "sh ./bin/setup-eb.sh"
   },
   "keywords": [],
