@@ -1,0 +1,24 @@
+{
+    "name": "final-project-udacity",
+    "version": "1.0.0",
+    "description": "Repository for the final project of the Udacity Full Stack Nanodegree",
+    "scripts": {
+        "api:build": "cd udagram-api && npm run build && cd ..",
+        "api:install": "cd udagram-api && npm ci && cd ..",
+        "api:test": "cd udagram-api && npm run test && cd ..",
+        "fe:build": "cd udagram-frontend && npm run build && cd ..",
+        "fe:install": "cd udagram-frontend && npm ci && cd ..",
+        "fe:test": "cd udagram-frontend && npm run test && cd ..",
+        "postinstall": "npm run api:install && npm run fe:install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/frivas/final-project-udacity.git"
+    },
+    "author": "Francisco Rivas <franciscojrivash@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/frivas/final-project-udacity/issues"
+    },
+    "homepage": "https://github.com/frivas/final-project-udacity#readme"
+}
