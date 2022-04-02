@@ -2,6 +2,7 @@ version: 2.1
 orbs:
     node: circleci/node@5.0.2
     aws-cli: circleci/aws-cli@2.0.0
+    aws-cli: circleci/aws-s3@3.0.0
 jobs:
     frontend:
         working_directory: ~/app/udagram-frontend
@@ -33,10 +34,12 @@ jobs:
                       printenv > www/.env
                       npm run create_archive
             - aws-cli/install
+            - aws-s3/copy:
+                from: ./www/Project.zip
+                to: $S3_BUCKET_SERVER
             - run:
                   name: Deploy Server
                   command: |-
-                      aws s3 cp ./www/Project.zip $S3_BUCKET_SERVER
                       aws elasticbeanstalk create-application-version --application-name $EB_APP --version-label <<pipeline.git.revision>> --source-bundle S3Bucket="$EB_BUCKET",S3Key="Project.zip"
                       aws elasticbeanstalk update-environment --application-name $EB_APP --environment-name $EB_ENV --version-label <<pipeline.git.revision>>
 workflows:
