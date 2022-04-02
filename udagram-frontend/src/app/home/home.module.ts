@@ -7,18 +7,18 @@ import { FeedModule } from '../feed/feed.module';
 import { HomePage } from './home.page';
 
 @NgModule({
-  imports: [
-    FeedModule,
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: HomePage
-      }
-    ])
-  ],
-  declarations: [HomePage]
+    imports: [
+        FeedModule,
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        RouterModule.forChild([
+            {
+                path: '',
+                component: HomePage
+            }
+        ])
+    ],
+    declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule { }
