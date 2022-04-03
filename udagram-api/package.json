@@ -12,8 +12,7 @@
         "prod": "tsc && node ./www/server.js",
         "clean": "rm -rf www/ || true",
         "build": "npm run clean && tsc && cp -rf src/migrations www/migrations && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Project.zip . && cd ..",
-        "test": "jasmine",
-        "deploy": "sh ./bin/setup-eb.sh"
+        "test": "jasmine"
     },
     "keywords": [],
     "author": "Gabriel Ruttner",
