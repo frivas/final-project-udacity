@@ -62,7 +62,7 @@ Screenshots required by the rubric are located [here](screenshots)
 
 Diagrams required by the rubric are located [here](documentation)
 
-# Documentation
+## Documentation
 
 -   [Infrastructue Description](documentation/InfrastructureDescription.pdf)
 -   [Pipeline Description](documentation/PipelineDescription.pdf)
