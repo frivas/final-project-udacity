@@ -25,12 +25,12 @@ jobs:
         working_directory: ~/app/udagram-api
         executor: node/default
         steps:
-            - aws-cli/install
-            - eb/setup
             - checkout:
                   path: ~/app
             - node/install-packages:
                   app-dir: ~/app/udagram-api
+            - aws-cli/install
+            - eb/setup
             - run:
                   name: Building and Archiving Server
                   command: |-
