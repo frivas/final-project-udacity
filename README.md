@@ -41,8 +41,10 @@ PORT
 ```
 
 5. Open 2 terminals:
-   5.1 Go inside the `udagram-api` directory and execute `npm rum build` and `npm rum start:local`
-   5.2 Go inside the `udagram-frontend` directory and execute `npm rum start`
+
+    5.1 Go inside the `udagram-api` directory and execute `npm rum build` and `npm rum start:local`
+
+    5.2 Go inside the `udagram-frontend` directory and execute `npm rum start`
 
 ## Dependencies
 
@@ -54,4 +56,4 @@ PORT
 
 ## Screenshots
 
-Screenshots required by the rubric are located [here](sreenshots)
+Screenshots required by the rubric are located [here](screenshots)
