@@ -8,7 +8,7 @@ The frontend is deployed in an S3 Bucket with the appropriate permissions and co
 
 The backend is deployed in AWS ElasticBeansTalk.
 
-## THe current state of the pipeline is:
+## The current state of the pipeline is:
 
 [![CircleCI](https://circleci.com/gh/frivas/final-project-udacity/tree/main.svg?style=svg)](https://circleci.com/gh/frivas/final-project-udacity/tree/main)
 
@@ -57,3 +57,7 @@ PORT
 ## Screenshots
 
 Screenshots required by the rubric are located [here](screenshots)
+
+## Diagrams
+
+Diagrams required by the rubric are located [here](diagrams)
