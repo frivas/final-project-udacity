@@ -15,6 +15,10 @@
         "test": "jasmine",
         "set_variables": "sh ./bin/set_eb_variables.sh"
     },
+    "engines": {
+        "npm": ">=7.0.0",
+        "node": ">=14.0.0"
+    },
     "keywords": [],
     "author": "Gabriel Ruttner",
     "license": "ISC",
