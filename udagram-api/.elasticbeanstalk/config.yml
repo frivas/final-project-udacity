@@ -5,14 +5,13 @@ branch-defaults:
 global:
     application_name: udagram-api
     branch: null
-    default_ec2_keyname: aws-eb
+    default_ec2_keyname: null
     default_platform: Node.js 14 running on 64bit Amazon Linux 2
     default_region: eu-west-1
     include_git_submodules: true
     instance_profile: null
     platform_name: null
     platform_version: null
-    profile: eb-cli
     repository: null
     sc: null
     workspace_type: Application
