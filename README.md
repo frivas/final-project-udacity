@@ -64,6 +64,6 @@ Diagrams required by the rubric are located [here](documentation)
 
 ## Documentation
 
--   [Infrastructue Description](documentation/InfrastructureDescription.pdf)
--   [Pipeline Description](documentation/PipelineDescription.pdf)
--   [Application Dependencies](documentation/ApplicationDependencies.pdf)
+-   [Infrastructue Description](blob/main/documents/InfrastructureDescription.pdf)
+-   [Pipeline Description](blob/main/documents/PipelineDescription.pdf)
+-   [Application Dependencies](blob/main/documents/ApplicationDependencies.pdf)
