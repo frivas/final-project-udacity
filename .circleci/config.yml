@@ -32,6 +32,7 @@ jobs:
                   name: Building and Archiving Server
                   command: |-
                       npm run build
+                      npm run set_variables
             - aws-cli/install
             - aws-s3/copy:
                   from: ./www/Project.zip
@@ -39,7 +40,6 @@ jobs:
             - run:
                   name: Deploy Server (EB)
                   command: |-
-                      sh ./bin/set_eb_variables.sh
                       aws elasticbeanstalk create-application-version --application-name $EB_APP --version-label <<pipeline.git.revision>> --source-bundle S3Bucket=$EB_BUCKET,S3Key="Project.zip"
                       aws elasticbeanstalk update-environment --application-name $EB_APP --environment-name $EB_ENV --version-label <<pipeline.git.revision>>
 workflows:
